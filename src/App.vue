@@ -7,7 +7,9 @@ import LogBar from './components/LogBar.vue';
 
 onMounted(() => {
     // get json data from api an safe in in the store
-    fetch("http://" + config.DOMAIN + "/api/data").then((data) => {
+    fetch("http://" + config.DOMAIN + "/api/data", {
+        mode: 'cors'
+    }).then((data) => {
         if (data.ok) {
             data.json().then(json => {
                 store.value.logs = (json as Log[]);
