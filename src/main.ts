@@ -3,4 +3,6 @@ import App from './App.vue'
 
 import './assets/fonts.scss'
 
+import './assets/global.scss'
+
 createApp(App).mount('#app')
