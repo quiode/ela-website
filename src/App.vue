@@ -48,7 +48,7 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: flex-start;
 }
 </style>
