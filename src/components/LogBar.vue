@@ -12,9 +12,10 @@ defineProps<{
         <h1>
             {{ log?.user }}
         </h1>
+
+        <TimeLine v-for="history in log?.online_history" :history="history"></TimeLine>
     </div>
 
-    <TimeLine v-for="history in log?.online_history" :history="history"></TimeLine>
 </template>
 
 <style scoped lang="scss">
