@@ -1,3 +1,3 @@
 export const config = {
-    DOMAIN: "localhost:8000"
+    DOMAIN: "ela.team-crystal.ch"
 }
