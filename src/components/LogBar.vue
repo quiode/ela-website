@@ -13,12 +13,19 @@ defineProps<{
             {{ log?.user }}
         </h1>
 
-        <TimeLine v-for="history in log?.online_history" :history="history"></TimeLine>
+        <TimeLine class="timeline" v-for="history in log?.online_history" :history="history"></TimeLine>
     </div>
 
 </template>
 
 <style scoped lang="scss">
+@media screen and (max-width: 640px) {
+    #wrapper {
+        width: 89vw !important;
+        flex-shrink: 0 !important;
+    }
+}
+
 #wrapper {
     padding: 3%;
     margin: 1vw;
@@ -31,5 +38,9 @@ defineProps<{
     &:hover {
         box-shadow: #2A9D90B4 0px 7px 29px 0px;
     }
+}
+
+.timeline {
+    margin: 5vh 0;
 }
 </style>

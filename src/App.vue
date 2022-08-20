@@ -50,6 +50,8 @@ header {
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: flex-start;
+
+    overflow-x: scroll;
 }
 </style>
   
